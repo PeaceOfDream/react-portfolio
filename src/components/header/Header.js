@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css'
+import cv from '../../pdf/BartashevichDzmitry.pdf'
 
 export const Header = () => {
   return (
@@ -14,8 +15,8 @@ export const Header = () => {
         <div className="header__text">
           <p>with passion for learning and creating.</p>
         </div>
-        <a href="#!" className="btn">
-          Download DV
+        <a href={cv} target="_blank" rel="noreferrer" className="btn">
+          Download СV
         </a>
       </div>
     </header>

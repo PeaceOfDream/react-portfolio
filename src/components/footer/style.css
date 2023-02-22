@@ -12,11 +12,7 @@
 	row-gap: 27px;
 }
 
-.social {
-	display: flex;
-	column-gap: 30px;
-	align-items: center;
-}
+
 
 .copyright p + p {
 	margin-top: 0.5em;

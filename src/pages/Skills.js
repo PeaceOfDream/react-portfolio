@@ -1,23 +1,17 @@
 import React from 'react'
+import { ContentItem } from '../components/contentItem/ContentItem';
+import { skills } from '../helpers/skillsList';
 
 export const Skills = () => {
   return (
-    <main class="section">
-      <div class="container">
-        <h1 class="title-1">Skills</h1>
+    <main className="section">
+      <div className="container">
+        <h1 className="title-1">Skills</h1>
 
-        <ul class="content-list">
-          <li class="content-list__item">
-            <h2 class="title-2">Frontend</h2>
-            <p>
-              JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, NPM, BootStrap,
-              MaterialUI, Yarn, TailwindCSS, StyledComponents
-            </p>
-          </li>
-          <li class="content-list__item">
-            <h2 class="title-2">Backend</h2>
-            <p>NodeJS, MySQL, MongoDB, PHP, Laravel</p>
-          </li>
+        <ul className="content-list">
+			{skills.map((skill) => (
+				<ContentItem key={skill.title} title={skill.title} desc={skill.desc}/>
+			))}
         </ul>
       </div>
     </main>
